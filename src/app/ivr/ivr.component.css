@@ -1,0 +1,14 @@
+.mat-ink-bar {
+    
+    display: none;
+}
+.mat-tab-link{
+    color : black;
+  }
+
+.mat-tab-label-active, .mat-tab-link-active{
+      color: black;
+      opacity: 1;
+      background-color: lightgrey;
+  }
+ 

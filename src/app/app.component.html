@@ -1,0 +1,60 @@
+<mat-toolbar class="matToolBar1">
+<img src="../assets//images//cox-logo-og-image.jpg"  alt="Cox Saturn">
+
+  <mat-tab-group class="groupTabs" animationDuration="0ms" (selectedTabChange)="onTabChanged($event);">
+    <mat-tab label="IVR" routerLink="/IVR" routerLinkActive="active-link">
+
+    </mat-tab>
+    <mat-tab label="CPR" routerLink="/CPR" routerLinkActive="active-link">
+
+    </mat-tab>
+  </mat-tab-group>
+
+</mat-toolbar>
+
+<mat-card class="mt1">
+  <div fxLayout="row" fxLayoutAlign="space-between start" >
+    <div fxFlex="20">
+      <h2>Change Logs</h2>
+    </div>
+    <div fxFlex="90">
+      <mat-form-field appearance="fill">
+        <mat-label>Select Site Name</mat-label>
+        <mat-select>
+          <mat-option value="option1">Option 1</mat-option>
+          <mat-option value="option2">Option 2</mat-option>
+          <mat-option value="option3">Option 3</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="ml-1">
+        <mat-label>Select Language</mat-label>
+        <mat-select>
+          <mat-option value="option1">Option 1</mat-option>
+          <mat-option value="option2">Option 2</mat-option>
+          <mat-option value="option3">Option 3</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="ml-1">
+        <mat-label>Select LOB</mat-label>
+        <mat-select>
+          <mat-option value="option1">Option 1</mat-option>
+          <mat-option value="option2">Option 2</mat-option>
+          <mat-option value="option3">Option 3</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="ml-1">
+        <mat-label>Select Application</mat-label>
+        <mat-select>
+          <mat-option value="option1">Option 1</mat-option>
+          <mat-option value="option2">Option 2</mat-option>
+          <mat-option value="option3">Option 3</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <span class="ml-1">
+        <button mat-raised-button color="primary" >Set Filter</button>
+      </span>
+    </div>
+  </div>
+  
+</mat-card>
+<router-outlet></router-outlet>

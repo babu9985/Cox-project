@@ -1,0 +1,18 @@
+<nav mat-tab-nav-bar>
+  <!-- <a mat-tab-link [routerLink]="''" routerLinkActive="active">Dynamic Messaging</a>
+  <a mat-tab-link [routerLink]="'dnis'">DNIS</a>
+  <a mat-tab-link [routerLink]="'exit-to-map'">ExitToMap</a>
+  <a mat-tab-link [routerLink]="'flags-admin'">FlagsAdmin</a>
+  <a mat-tab-link [routerLink]="'get-campaign'">GetCampaign</a>
+  <a mat-tab-link [routerLink]="'ivr-exit-rules'">IvrExitRules</a>
+  <a mat-tab-link [routerLink]="'bridge'">Bridge Aplication</a>
+  <a mat-tab-link [routerLink]="'message-admin'">MessageAdmin</a>
+  <a mat-tab-link [routerLink]="'office-locator'">OfficeLocator</a>
+  <a mat-tab-link [routerLink]="'pay-per-view'">PayPerView</a>
+  <a mat-tab-link [routerLink]="'tech-admin'">TechAdmin</a> -->
+
+  <a mat-tab-link *ngFor="let link of links;index as i" [routerLink]="link" (click)="activeLink = link" [active]="activeLink == link">
+    {{titles[i]}}
+  </a>
+</nav>
+<router-outlet></router-outlet>
